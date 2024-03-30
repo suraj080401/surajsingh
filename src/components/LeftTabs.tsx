@@ -54,25 +54,27 @@ const LeftTabs: React.FC = () => {
 	const [currTab, setCurrTab] = useState("Files");
 
 	return (
-		<div className="w-fit h-full flex flex-col justify-between items-center text-2xl text-[#A9B1D6] ">
+		<div className="w-fit h-full flex flex-col justify-between items-center text-2xl">
 			<div className="flex flex-col space-y-4">
-				{allTabsSection1.map((item) => {
+				{allTabsSection1.map((item, i) => {
 					return (
 						<LeftTabIcon
 							item={item}
 							currTab={currTab}
 							setCurrTab={setCurrTab}
+							key={i}
 						/>
 					);
 				})}
 			</div>
 			<div className="flex flex-col space-y-4">
-				{allTabsSection2.map((item) => {
+				{allTabsSection2.map((item, i) => {
 					return (
 						<LeftTabIcon
 							item={item}
 							currTab={currTab}
 							setCurrTab={setCurrTab}
+							key={i}
 						/>
 					);
 				})}

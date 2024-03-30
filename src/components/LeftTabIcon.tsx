@@ -22,8 +22,10 @@ const LeftTabIcon: React.FC<LeftTabIconProps> = ({
 	return (
 		<div className="relative">
 			<div
-				className={`text-4xl px-4 py-3 border-l border-[#1E2138] ${
-					currTab === item.title && "border-gray-300"
+				className={`hover:text-[#A9B1D6] hover:opacity-100 text-[#A9B1D6] text-3xl px-4 py-2 border-l border-[#1E2138] ${
+					currTab === item.title
+						? "border-gray-300 text-[#A9B1D6 opacity-100]"
+						: "opacity-50"
 				}`}
 				onClick={() => setCurrTab(item.title)}
 				onMouseEnter={() => setIsHovered(true)}
@@ -32,7 +34,7 @@ const LeftTabIcon: React.FC<LeftTabIconProps> = ({
 				<Component />
 			</div>
 			<span
-				className={`absolute left-16 text-sm top-4 border-[#1B1E2E] border p-1 whitespace-nowrap ${
+				className={`text-[#A9B1D6] absolute left-16 text-sm top-2 border-[#1B1E2E] bg-[#1E2138] border p-1 whitespace-nowrap ${
 					isHovered ? "opacity-100" : "opacity-0"
 				}`}
 			>

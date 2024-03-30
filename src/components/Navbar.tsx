@@ -30,14 +30,17 @@ const styles = {
 
 const Navbar: React.FC = () => {
 	return (
-		<div className="w-full h-[8vh] flex flex-row justify-between pl-2 border-b-2 border-[#1B1E2E] items-center">
+		<div className="w-full h-[7vh] flex flex-row justify-between pl-2 border-b-2 border-[#1B1E2E] items-center">
 			<div className="flex flex-row space-x-4 items-center py-4">
 				<div>
 					<Image src={VSCODE} alt="vslogo" width={25} height={25} />
 				</div>
-				{navbarData.map((item) => {
+				{navbarData.map((item, i) => {
 					return (
-						<div className={`text-[#A9B1D6] text-md ${styles.iconsGroup1}`}>
+						<div
+							key={i}
+							className={`text-[#A9B1D6] text-md ${styles.iconsGroup1}`}
+						>
 							{item}
 						</div>
 					);
