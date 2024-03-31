@@ -92,7 +92,6 @@ const AboutMe: React.FC = () => {
 			<div>
 				<div className="fixed bottom-4 left-[65vw] transform -translate-x-1/2">
 					<FaAngleDown className="animate-bounce text-white text-2xl" />
-					<FaAngleDown className="animate-bounce text-white text-2xl" />
 				</div>
 			</div>
 		</div>
