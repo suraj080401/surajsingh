@@ -4,6 +4,7 @@ import { useRecoilState } from "recoil";
 import { VscChromeClose } from "react-icons/vsc";
 import AboutMe from "./PortfolioComponents/AboutMe";
 import Skills from "./PortfolioComponents/Skills";
+import WorkExperience from "./PortfolioComponents/WorkExperience";
 
 const TabMap: Record<string, string> = {
 	aboutme: "AboutMe.tsx",
@@ -31,6 +32,9 @@ const Container: React.FC = () => {
 				break;
 			case "aboutme":
 				componentToRender = <AboutMe />;
+				break;
+			case "workexp":
+				componentToRender = <WorkExperience />;
 				break;
 			default:
 				componentToRender = <div>Default Component</div>;
