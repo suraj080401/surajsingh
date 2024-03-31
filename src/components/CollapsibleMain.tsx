@@ -51,7 +51,7 @@ const CollapsibleMain: React.FC<CollapsibleMainProps> = ({ item }) => {
 		<Collapsible
 			open={isOpen && item === "PORTFOLIO"}
 			onOpenChange={setIsOpen}
-			className={`border-b-2 border-[#1B1E2E] w-full ${
+			className={`border-b-2 border-[#1B1E2E] w-full h-full ${
 				item === "PORTFOLIO" && isOpen ? "min-h-[66vh]" : ""
 			}`}
 			disabled={item !== "PORTFOLIO"}
@@ -59,13 +59,13 @@ const CollapsibleMain: React.FC<CollapsibleMainProps> = ({ item }) => {
 			<CollapsibleTrigger className="w-full">
 				<CTrigger item={item} open={isOpen} />
 			</CollapsibleTrigger>
-			<CollapsibleContent className="overflow-y-auto h-[62vh] ">
-				<div className="flex flex-col space-y-1 my-1">
+			<CollapsibleContent className="overflow-y-auto h-[62vh] w-full">
+				<div className="flex flex-col space-y-1 w-full justify-center">
 					{SubCollapsibleCmpData.map((item, i) => {
 						return <SubCollapsibleCmp key={i} item={item} />;
 					})}
 				</div>
-				<div className="flex flex-col space-y-1 my-1">
+				<div className="flex flex-col space-y-1">
 					{SingleFileCompData.map((item, i) => {
 						return <SingleFileComp key={i} item={item} />;
 					})}

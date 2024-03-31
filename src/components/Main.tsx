@@ -6,6 +6,7 @@ import {
 	ResizablePanel,
 	ResizablePanelGroup,
 } from "@/components/ui/resizable";
+import Container from "./Container";
 
 const Main: React.FC = () => {
 	return (
@@ -16,13 +17,13 @@ const Main: React.FC = () => {
 					className="flex flex-row"
 					defaultSize={25}
 					maxSize={30}
-					minSize={15}
+					minSize={20}
 				>
 					<Explorer />
 				</ResizablePanel>
 				<ResizableHandle />
 				<ResizablePanel className="" defaultSize={75}>
-					Two
+					<Container />
 				</ResizablePanel>
 			</ResizablePanelGroup>
 		</div>

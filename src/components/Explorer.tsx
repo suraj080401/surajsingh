@@ -24,7 +24,7 @@ const Explorer: React.FC = () => {
 				<p>EXPLORER</p>
 				<VscEllipsis />
 			</div>
-			<div className="flex flex-col w-full">
+			<div className="flex flex-col w-full ">
 				{CollapsibleData.map((item, i) => {
 					return <CollapsibleMain key={i} item={item} />;
 				})}
