@@ -17,7 +17,7 @@ const SrcTabs: React.FC = () => {
 	return (
 		<div className="flex flex-col space-y-1 my-1">
 			<div
-				className={`flex flex-row items-center space-x-1 px-9 ${
+				className={`flex flex-row hover:bg-gray-400 hover:bg-opacity-20 items-center space-x-1 px-9 ${
 					currTab == "aboutme" ? "bg-gray-400 bg-opacity-20" : ""
 				}`}
 				onClick={() => handleOnlick("aboutme")}
@@ -26,7 +26,7 @@ const SrcTabs: React.FC = () => {
 				<p>AboutMe.tsx</p>
 			</div>
 			<div
-				className={`flex flex-row items-center space-x-1 px-9 ${
+				className={`flex flex-row hover:bg-gray-400 hover:bg-opacity-20 items-center space-x-1 px-9 ${
 					currTab == "skills" ? "bg-gray-400 bg-opacity-20" : ""
 				}`}
 				onClick={() => handleOnlick("skills")}
@@ -35,7 +35,7 @@ const SrcTabs: React.FC = () => {
 				<p>Skills.tsx</p>
 			</div>
 			<div
-				className={`flex flex-row items-center space-x-1 px-9 ${
+				className={`flex flex-row hover:bg-gray-400 hover:bg-opacity-20 items-center space-x-1 px-9 ${
 					currTab == "workexp" ? "bg-gray-400 bg-opacity-20" : ""
 				}`}
 				onClick={() => handleOnlick("workexp")}
@@ -44,7 +44,7 @@ const SrcTabs: React.FC = () => {
 				<p>WorkExperience.tsx</p>
 			</div>
 			<div
-				className={`flex flex-row items-center space-x-1 px-9 ${
+				className={`flex flex-row hover:bg-gray-400 hover:bg-opacity-20 items-center space-x-1 px-9 ${
 					currTab == "projects" ? "bg-gray-400 bg-opacity-20" : ""
 				}`}
 				onClick={() => handleOnlick("projects")}
@@ -53,7 +53,7 @@ const SrcTabs: React.FC = () => {
 				<p>Projects.tsx</p>
 			</div>
 			<div
-				className={`flex flex-row items-center space-x-1 px-9 ${
+				className={`flex flex-row hover:bg-gray-400 hover:bg-opacity-20 items-center space-x-1 px-9 ${
 					currTab == "education" ? "bg-gray-400 bg-opacity-20" : ""
 				}`}
 				onClick={() => handleOnlick("education")}

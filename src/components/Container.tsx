@@ -5,6 +5,8 @@ import { VscChromeClose } from "react-icons/vsc";
 import AboutMe from "./PortfolioComponents/AboutMe";
 import Skills from "./PortfolioComponents/Skills";
 import WorkExperience from "./PortfolioComponents/WorkExperience";
+import Projects from "./PortfolioComponents/Projects";
+import Education from "./PortfolioComponents/Education";
 
 const TabMap: Record<string, string> = {
 	aboutme: "AboutMe.tsx",
@@ -36,6 +38,13 @@ const Container: React.FC = () => {
 			case "workexp":
 				componentToRender = <WorkExperience />;
 				break;
+			case "projects":
+				componentToRender = <Projects />;
+				break;
+			case "education":
+				componentToRender = <Education />;
+				break;
+
 			default:
 				componentToRender = <div>Default Component</div>;
 		}
