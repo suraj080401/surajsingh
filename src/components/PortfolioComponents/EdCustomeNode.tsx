@@ -46,4 +46,6 @@ const EdCustomeNode: FC<NodeProps> = memo(({ data, isConnectable }) => {
 	);
 });
 
+EdCustomeNode.displayName = "EdCustomeNodeName";
+
 export default EdCustomeNode;

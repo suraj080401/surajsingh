@@ -18,7 +18,7 @@ const AboutMe: React.FC = () => {
 				/>
 			</div>
 			<div className="flex flex-row justify-center space-x-2">
-				<p className="text-6xl text-gray-300 font-caveat">Hi I'm </p>
+				<p className="text-6xl text-gray-300 font-caveat">Hi I&apos;m </p>
 				<p className="bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text font-bold text-6xl text-center font-caveat h-16">
 					Suraj Singh
 				</p>

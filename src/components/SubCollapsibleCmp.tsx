@@ -21,7 +21,7 @@ const SubCollapsibleCmp: React.FC<SubCollapsibleCmpProps> = ({ item }) => {
 		if (item.title === "public" || item.title === "src") {
 			setIsOpen(true);
 		}
-	}, []);
+	}, [item.title]);
 	return (
 		<div className="text-[#A9B1D6] h-full w-full">
 			<Collapsible

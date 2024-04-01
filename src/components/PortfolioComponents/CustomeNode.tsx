@@ -43,4 +43,6 @@ const CustomeNode: FC<NodeProps> = memo(({ data, isConnectable }) => {
 	);
 });
 
+CustomeNode.displayName = "CustomeNodeName";
+
 export default CustomeNode;

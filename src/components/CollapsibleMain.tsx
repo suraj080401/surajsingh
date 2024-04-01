@@ -46,7 +46,7 @@ const CollapsibleMain: React.FC<CollapsibleMainProps> = ({ item }) => {
 		if (item === "PORTFOLIO") {
 			setIsOpen(true);
 		}
-	}, []);
+	}, [item]);
 	return (
 		<Collapsible
 			open={isOpen && item === "PORTFOLIO"}
