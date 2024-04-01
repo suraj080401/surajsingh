@@ -42,11 +42,10 @@ const CardComp: React.FC<CardCompProps> = ({ item, key }) => {
 					<CarouselContent>
 						{item.allimages.map((ii, i) => {
 							return (
-								<CarouselItem>
+								<CarouselItem key={i}>
 									<Image
 										src={ii}
-										alt={`key`}
-										key={i}
+										alt={`${i}`}
 										className="object-cover w-full h-full"
 									/>
 								</CarouselItem>
